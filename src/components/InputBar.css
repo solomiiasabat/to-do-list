@@ -1,0 +1,10 @@
+.grid-wrapper {
+  display: grid;
+  grid-template-columns: auto auto 80px;
+  justify-content: space-around;
+}
+
+.title-engine,
+.description-engine {
+  width: 300px;
+}

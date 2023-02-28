@@ -1,11 +1,11 @@
 import "./App.css";
-import Input_Bar from "./Input_Bar";
+import InputBar from "./InputBar";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">✅ To Do List</header>
-      <Input_Bar />
+      <InputBar />
     </div>
   );
 }
