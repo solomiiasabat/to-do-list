@@ -1,10 +1,13 @@
 .grid-wrapper {
-  display: grid;
-  grid-template-columns: auto auto 80px;
-  justify-content: space-around;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.title-engine,
-.description-engine {
-  width: 300px;
+.grid-wrapper > div {
+  padding: 20px 90px;
+}
+
+.grid-wrapper > button {
+  padding: 20px 90px;
 }

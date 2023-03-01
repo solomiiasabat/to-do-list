@@ -1,0 +1,9 @@
+.ModalWindow {
+  background-color: green;
+  position: fixed;
+  top: 30%;
+  padding: 20px;
+  width: 380px;
+  margin-left: -23%;
+  text-align: left;
+}
