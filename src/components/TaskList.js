@@ -4,6 +4,11 @@ import ModalWindow from "./ModalWindow";
 
 export default function TaskList(props) {
   const [openModalWindow, setOpenModalWindow] = useState(false);
+  const [isChecked, setIsChecked] = useState(false);
+
+  function handleChecked() {
+    setIsChecked(true);
+  }
 
   function handleOpen() {
     setOpenModalWindow(true);
@@ -40,11 +45,12 @@ export default function TaskList(props) {
                   open={openModalWindow}
                   content={task}
                   close={handleClose}
+                  checkbox={isChecked}
                 />
               </p>
 
               <p className="task-line status-main">
-                <input type="checkbox"></input>
+                <input type="checkbox" onClick={handleChecked}></input>
               </p>
             </li>
           );

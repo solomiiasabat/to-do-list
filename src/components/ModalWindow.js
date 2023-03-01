@@ -12,7 +12,12 @@ export default function ModalWindow(props) {
       <p className="modal-description">Description:</p>
       <p className="modal-description-text">{props.content.value2}</p>
       <p className="modal-status">
-        Status: <input type="checkbox"></input>
+        Status:{" "}
+        {props.checkbox ? (
+          <input type="checkbox" checked="true"></input>
+        ) : (
+          <input type="checkbox"></input>
+        )}
       </p>
       <button className="close-btn" onClick={props.close}>
         Close
