@@ -48,7 +48,11 @@ export default function InputBar() {
             value={taskTitle}
             onChange={handleTaskChange}
           ></input>
-          {requiredTitle ? <p className="required">This field is empty</p> : ""}
+          {requiredTitle && taskTitle.length <= 0 ? (
+            <p className="required">This field is empty</p>
+          ) : (
+            ""
+          )}
         </div>
 
         <div className="description_form">
