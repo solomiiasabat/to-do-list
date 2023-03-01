@@ -18,6 +18,8 @@ export default function TaskList(props) {
     setOpenModalWindow(false);
   }
 
+  let idCounter = 1;
+
   return (
     <section className="taskList">
       <header className="mainTaskTitles">
@@ -31,9 +33,7 @@ export default function TaskList(props) {
         {props.tasks.map((task) => {
           return (
             <li key={task.id} className="yourTask">
-              <p className="task-line id-main">
-                <li></li>
-              </p>
+              <p className="task-line id-main">{idCounter++}</p>
 
               <p className="task-line title-main">{task.value1}</p>
 

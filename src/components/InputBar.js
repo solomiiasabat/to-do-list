@@ -16,7 +16,7 @@ export default function InputBar() {
     setTaskDescription(event.target.value);
   }
 
-  function addDownTasks() {
+  function addTask() {
     if (taskTitle.length === 0) {
       setRequiredTitle(true);
     }
@@ -68,11 +68,7 @@ export default function InputBar() {
 
         <div>
           <p className="to-hide">****</p>
-          <button
-            type="button"
-            className="create-button"
-            onClick={addDownTasks}
-          >
+          <button type="button" className="create-button" onClick={addTask}>
             Create
           </button>
         </div>
