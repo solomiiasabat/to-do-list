@@ -19,8 +19,7 @@
 }
 
 .modal-description-text {
-  color: red;
-  word-break: break-all;
+  white-space: break-spaces;
 }
 
 .close-btn {
