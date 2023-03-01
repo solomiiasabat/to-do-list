@@ -35,12 +35,12 @@ export default function InputBar() {
 
   return (
     <section className="input_bar">
-      <div className="grid-wrapper">
+      <div className="container">
         <div className="title_form">
           <p className="title">Title</p>
           <input
             type="search"
-            placeholder="Enter title"
+            placeholder=" Enter title"
             className="title-engine"
             value={taskTitle}
             onChange={handleTaskChange}
@@ -51,7 +51,7 @@ export default function InputBar() {
           <p className="description">Description</p>
           <input
             type="search"
-            placeholder="Enter description"
+            placeholder=" Enter description"
             className="description-engine"
             value={taskDescription}
             onChange={handleDescriptionChange}
@@ -59,10 +59,10 @@ export default function InputBar() {
         </div>
 
         <div>
-          <p>****</p>
+          <p className="to-hide">****</p>
           <button
-            className="create_button"
             type="button"
+            className="create-button"
             onClick={addDownTasks}
           >
             Create

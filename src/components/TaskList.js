@@ -16,19 +16,23 @@ export default function TaskList(props) {
   return (
     <section className="taskList">
       <header className="mainTaskTitles">
-        <p className="order">ID</p>
-        <p className="titles">TITLE</p>
-        <p className="descriptions">DESCRIPTION</p>
-        <p className="status">STATUS</p>
+        <p className="main order">ID</p>
+        <p className="main titles">TITLE</p>
+        <p className="main descriptions">DESCRIPTION</p>
+        <p className="main status">STATUS</p>
       </header>
 
       <ol className="listOfTitles">
         {props.tasks.map((task) => {
           return (
             <li key={task.id} className="yourTask">
-              <p>{task.id}</p>
-              <p>{task.value1}</p>
-              <p>
+              <p className="task-line">
+                <li></li>
+              </p>
+
+              <p className="task-line">{task.value1}</p>
+
+              <p className="task-line">
                 <button className="modal-window" onClick={handleOpen}>
                   {task.value2}
                 </button>
@@ -39,7 +43,7 @@ export default function TaskList(props) {
                 />
               </p>
 
-              <p>
+              <p className="task-line">
                 <input type="checkbox"></input>
               </p>
             </li>

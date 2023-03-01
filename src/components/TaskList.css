@@ -2,16 +2,21 @@
 .yourTask {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
-.mainTaskTitles > p,
-.yourTask > p {
-  padding: 20px 92px;
+.main {
+  padding: 55px 70px 1px 70px;
+  max-width: 300px;
 }
-.yourTask > p {
-  padding: 20px 92px;
-  text-align: center;
+
+.task-line {
+  padding: 20px 70px;
+  border: 1px solid black;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
 }
 
 .modal-window {
@@ -22,6 +27,10 @@
   font: inherit;
   cursor: pointer;
   outline: inherit;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 50px;
+  overflow: hidden;
 }
 
 .modal-window {
