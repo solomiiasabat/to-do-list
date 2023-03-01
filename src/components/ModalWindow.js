@@ -8,7 +8,7 @@ export default function ModalWindow(props) {
 
   return (
     <section className="ModalWindow">
-      <header className="modal-title">{props.content.value1}</header>
+      <p className="modal-title">{props.content.value1}</p>
       <p className="modal-description">Description:</p>
       <p className="modal-description-text">{props.content.value2}</p>
       <p className="modal-status">

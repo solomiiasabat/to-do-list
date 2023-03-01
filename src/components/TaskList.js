@@ -22,17 +22,17 @@ export default function TaskList(props) {
 
   return (
     <section className="taskList">
-      <header className="mainTaskTitles">
+      <div className="mainTaskTitles">
         <p className="main order">ID</p>
         <p className="main titles">TITLE</p>
         <p className="main descriptions">DESCRIPTION</p>
         <p className="main status">STATUS</p>
-      </header>
+      </div>
 
-      <ol className="listOfTitles">
+      <div className="listOfTitles">
         {props.tasks.map((task) => {
           return (
-            <li key={task.id} className="yourTask">
+            <div key={task.id} className="yourTask">
               <p className="task-line id-main">{idCounter++}</p>
 
               <p className="task-line title-main">{task.value1}</p>
@@ -52,10 +52,10 @@ export default function TaskList(props) {
               <p className="task-line status-main">
                 <input type="checkbox" onClick={handleChecked}></input>
               </p>
-            </li>
+            </div>
           );
         })}
-      </ol>
+      </div>
     </section>
   );
 }

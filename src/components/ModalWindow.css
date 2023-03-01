@@ -9,9 +9,10 @@
 }
 
 .modal-title {
+  margin-top: 0px;
   text-align: center;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 19px;
 }
 
 .modal-description {
