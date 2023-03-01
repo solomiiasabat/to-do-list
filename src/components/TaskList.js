@@ -26,13 +26,13 @@ export default function TaskList(props) {
         {props.tasks.map((task) => {
           return (
             <li key={task.id} className="yourTask">
-              <p className="task-line">
+              <p className="task-line id-main">
                 <li></li>
               </p>
 
-              <p className="task-line">{task.value1}</p>
+              <p className="task-line title-main">{task.value1}</p>
 
-              <p className="task-line">
+              <p className="task-line description-main">
                 <button className="modal-window" onClick={handleOpen}>
                   {task.value2}
                 </button>
@@ -43,7 +43,7 @@ export default function TaskList(props) {
                 />
               </p>
 
-              <p className="task-line">
+              <p className="task-line status-main">
                 <input type="checkbox"></input>
               </p>
             </li>

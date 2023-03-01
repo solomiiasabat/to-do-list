@@ -6,6 +6,7 @@ export default function InputBar() {
   const [taskTitle, setTaskTitle] = useState("");
   const [taskDescription, setTaskDescription] = useState("");
   const [tasks, setTasks] = useState([]);
+  const [requiredTitle, setRequiredTitle] = useState("");
 
   function handleTaskChange(event) {
     setTaskTitle(event.target.value);
@@ -16,6 +17,10 @@ export default function InputBar() {
   }
 
   function addDownTasks() {
+    if (taskTitle.length === 0) {
+      setRequiredTitle(true);
+    }
+
     if (!taskTitle || !taskDescription) {
       return;
     }
@@ -29,8 +34,6 @@ export default function InputBar() {
     setTasks((oldList) => [...oldList, newTask]);
     setTaskTitle("");
     setTaskDescription("");
-
-    console.log(tasks);
   }
 
   return (
@@ -45,6 +48,7 @@ export default function InputBar() {
             value={taskTitle}
             onChange={handleTaskChange}
           ></input>
+          {requiredTitle ? <p className="required">This field is empty</p> : ""}
         </div>
 
         <div className="description_form">

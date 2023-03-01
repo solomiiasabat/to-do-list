@@ -21,3 +21,8 @@
 .create-button {
   padding: 5px 15px;
 }
+
+.required {
+  color: red;
+  font-size: 12px;
+}

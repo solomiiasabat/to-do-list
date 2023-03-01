@@ -8,15 +8,32 @@
 .main {
   padding: 55px 70px 1px 70px;
   max-width: 300px;
+  font-weight: bold;
+}
+
+.yourTask {
+  background-color: #a5a5a5;
+  max-width: 765px;
 }
 
 .task-line {
-  padding: 20px 70px;
-  border: 1px solid black;
+  padding: 15px 60px;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: 50px;
+  width: 80px;
   overflow: hidden;
+}
+
+.id-main {
+  margin-left: -10px;
+}
+
+.title-main {
+  margin-left: -65px;
+}
+
+.status-main {
+  margin-left: 40px;
 }
 
 .modal-window {

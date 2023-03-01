@@ -4,7 +4,7 @@ import InputBar from "./InputBar";
 function App() {
   return (
     <div className="App">
-      <header className="App-header">✅ To Do List</header>
+      <header className="App-header"></header>
       <InputBar />
     </div>
   );

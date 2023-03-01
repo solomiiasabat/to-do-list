@@ -1,9 +1,28 @@
 .ModalWindow {
-  background-color: green;
+  background-color: white;
   position: fixed;
   top: 30%;
   padding: 20px;
   width: 380px;
-  margin-left: -4%;
+  margin-left: 2%;
   text-align: left;
+}
+
+.modal-title {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.modal-description {
+  font-weight: bold;
+}
+
+.modal-description-text {
+  color: red;
+  word-break: break-all;
+}
+
+.close-btn {
+  padding: 5px, 10px;
 }
